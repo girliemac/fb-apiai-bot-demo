@@ -18,7 +18,7 @@ const server = app.listen(process.env.PORT || 5000, () => {
 const apiaiApp = apiai(APIAI_TOKEN);
 
 /* For Facebook Validation */
-app.get('/webhook', function (req, res) {
+app.get('/webhook', (req, res) => {
   if (req.query['hub.mode'] && req.query['hub.verify_token'] === 'tuxedo_cat') {
     res.status(200).send(req.query['hub.challenge']);
   } else {
@@ -27,11 +27,11 @@ app.get('/webhook', function (req, res) {
 });
 
 /* Handling all messenges */
-app.post('/webhook', function (req, res) {
+app.post('/webhook', (req, res) => {
   console.log(req.body);
   if (req.body.object === 'page') {
-    req.body.entry.forEach(function (entry) {
-      entry.messaging.forEach(function (event) {
+    req.body.entry.forEach((entry) => {
+      entry.messaging.forEach((event) => {
         if (event.message && event.message.text) {
           sendMessage(event);
         }
@@ -76,7 +76,7 @@ function sendMessage(event) {
     sessionId: 'tabby_cat'
   });
 
-  apiai.on('response', function(response) {
+  apiai.on('response', (response) => {
     console.log(response)
     let aiText = response.result.fulfillment.speech;
 
@@ -88,7 +88,7 @@ function sendMessage(event) {
         recipient: {id: sender},
         message: {text: aiText}
       }
-    }, function (error, response) {
+    }, (error, response) => {
       if (error) {
           console.log('Error sending message: ', error);
       } else if (response.body.error) {
@@ -97,7 +97,7 @@ function sendMessage(event) {
     });
   });
 
-  apiai.on('error', function(error) {
+  apiai.on('error', (error) => {
     console.log(error);
   });
 
