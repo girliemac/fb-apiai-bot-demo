@@ -110,7 +110,7 @@ function prepareSendBio(sender) {
             title: 'Twitter',
             subtitle: '@girlie_mac',
             item_url: 'https://www.twitter.com/in/girlie_mac',
-            image_url: 'https://raw.githubusercontent.com/girliemac/fb-apiai-bot-demo/tutorial-01/public/images/tomomi-linkedin.png',
+            image_url: 'https://github.com/girliemac/fb-apiai-bot-demo/blob/master/public/images/tomomi-twitter.png',
             buttons: [{
               type: 'web_url',
               url: 'https://www.twitter.com/in/girlie_mac',
@@ -120,7 +120,7 @@ function prepareSendBio(sender) {
             title: 'Work History',
             subtitle: 'Tomomi\'s LinkedIn',
             item_url: 'https://www.linkedin.com/in/tomomi',
-            image_url: 'https://raw.githubusercontent.com/girliemac/fb-apiai-bot-demo/tutorial-01/public/images/tomomi-linkedin.png',
+            image_url: 'https://github.com/girliemac/fb-apiai-bot-demo/blob/master/public/images/tomomi-linkedin.png',
             buttons: [{
               type: 'web_url',
               url: 'https://www.linkedin.com/in/tomomi',
@@ -130,7 +130,7 @@ function prepareSendBio(sender) {
             title: 'GitHub Repo',
             subtitle: 'girliemac',
             item_url: 'https://github.com/girliemac',
-            image_url: 'https://raw.githubusercontent.com/girliemac/fb-apiai-bot-demo/tutorial-01/public/images/tomomi-linkedin.png',
+            image_url: 'https://github.com/girliemac/fb-apiai-bot-demo/blob/master/public/images/tomomi-github.png',
             buttons: [{
               type: 'web_url',
               url: 'https://github.com/girliemac',
