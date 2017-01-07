@@ -109,11 +109,11 @@ function prepareSendBio(sender) {
           elements: [{
             title: 'Twitter',
             subtitle: '@girlie_mac',
-            item_url: 'https://www.twitter.com/in/girlie_mac',
+            item_url: 'https://www.twitter.com/girlie_mac',
             image_url: 'https://github.com/girliemac/fb-apiai-bot-demo/blob/master/public/images/tomomi-twitter.png',
             buttons: [{
               type: 'web_url',
-              url: 'https://www.twitter.com/in/girlie_mac',
+              url: 'https://www.twitter.com/girlie_mac',
               title: 'View Twitter Bio'
             }],
           }, {
