@@ -10,11 +10,13 @@ If you ask about weather, the bot returns with the current condition in a certai
 
 
 
-**Live Demo** - I have deployed to Heroku, however, Facebook doesn't allow the bot to interact with public until the bot is approved. I just submitted as of the evening of Jan 6, so stay tuned. Once approved, you can scan the code (a sort of like a QR code), also search @TomomiBot on Messenger.
+**Live Demo** — Scan the code below (the one looks sort of like a QR code) from the Messenger App on mobile, or access on [m.me/tomomiBot](https://www.messenger.com/t/tomomiBot/) from browser.
+
+Try telling the bot, "Hello", "Who are you?", "How is the weather in Tokyo?", etc.
 
 ![Facebook scan code](https://raw.githubusercontent.com/girliemac/fb-apiai-bot-demo/master/public/images/messenger-scan-code.png)
 
-Try telling the bot, "Hello", "Who are you?", "How is the weather in Tokyo?", etc.
+
 
 ## Tutorial
 
