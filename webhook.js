@@ -8,11 +8,21 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const apiai = require('apiai');
 
+const https = require('https');
+const fs = require('fs');
+const sslpath = 'PATH TO DIRECTORY CONTAINING SSL CERTS'
+const options = {
+    key: fs.readFileSync(sslpath + 'privkey.pem'),
+    cert: fs.readFileSync(sslpath + 'fullchain.pem')
+}
+
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const server = app.listen(process.env.PORT || 5000, () => {
+httpsapp = https.createServer(options, app)
+
+const server = httpsapp.listen(process.env.PORT || 5000, () => {
   console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
 });
 
